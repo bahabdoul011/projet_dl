@@ -1,0 +1,7 @@
+Flask
+Redis
+pandas
+scikit-learn
+fastapi
+uvicorn[standard]
+joblib
