@@ -23,4 +23,20 @@ def root():
 def predict(payload: InputText):
     df = pd.DataFrame([payload.dict()])
     pred = model.predict(df)[0]
-    return {"raw": int(pred), "label": label_map[pred]}
+    # Si le modèle a predict_proba (LogisticRegression oui)
+    proba = None
+    if hasattr(model, "predict_proba"):
+        proba_vals = model.predict_proba(df)[0]
+        proba = {
+            "human": float(proba_vals[0]),
+            "AI": float(proba_vals[1])
+        }
+    
+    return {
+        "prediction_raw": int(pred),
+        "prediction_label": label_map[pred],
+        "probabilities": proba
+    }
+
+    # return {"raw": int(pred), "label": label_map[pred]}
+
