@@ -51,7 +51,7 @@ flowchart LR
 ```
 
 
-Architecture de déploiement (simple)
+## Architecture de déploiement (simple)
 
 Un service web unique
 
@@ -61,7 +61,7 @@ Port configurable via variable d’environnement PORT
 
 Compatible avec Render, Railway, Docker ou Cloud Run
 
-🛠 Technologies utilisées
+## 🛠 Technologies utilisées
 
 Python
 
@@ -80,7 +80,7 @@ Uvicorn
 CORS Middleware
 
 
-🌐 Déploiement
+## 🌐 Déploiement
 
 Port configurable via la variable d’environnement PORT
 
@@ -94,7 +94,7 @@ Docker
 
 Cloud Run
 
-✅ Points clés du projet
+## ✅ Points clés du projet
 
 API ML prête pour la production
 
