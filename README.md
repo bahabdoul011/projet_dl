@@ -48,6 +48,9 @@ flowchart LR
   G --> H
   H --> A
 
+```
+
+
 Architecture de déploiement (simple)
 
 Un service web unique
