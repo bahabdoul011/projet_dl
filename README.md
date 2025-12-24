@@ -48,3 +48,59 @@ flowchart LR
   G --> H
   H --> A
 
+Architecture de déploiement (simple)
+
+Un service web unique
+
+Modèle chargé au démarrage de l’application
+
+Port configurable via variable d’environnement PORT
+
+Compatible avec Render, Railway, Docker ou Cloud Run
+
+🛠 Technologies utilisées
+
+Python
+
+FastAPI
+
+Pydantic
+
+Pandas
+
+Scikit-learn
+
+Joblib
+
+Uvicorn
+
+CORS Middleware
+
+
+🌐 Déploiement
+
+Port configurable via la variable d’environnement PORT
+
+Compatible avec :
+
+Render
+
+Railway
+
+Docker
+
+Cloud Run
+
+✅ Points clés du projet
+
+API ML prête pour la production
+
+Modèle chargé une seule fois au démarrage
+
+Typage strict avec Pydantic
+
+Gestion CORS
+
+Résultats interprétables (probabilités)
+
+Documentation automatique FastAPI
