@@ -19,4 +19,32 @@ avec une attention portée à la clarté, la reproductibilité et l’exploitati
 ---
 
 ## 🏗 Architecture
+Client
+↓
+FastAPI (API REST)
+↓
+Validation Pydantic
+↓
+Transformation Pandas (DataFrame)
+↓
+Modèle ML (joblib)
+↓
+Prédiction + probabilités
+↓
+Réponse JSON
+
+
+### Diagramme d’architecture
+
+```mermaid
+flowchart LR
+  A[Client\nBrowser / Postman / Script] -->|POST /predict| B[FastAPI]
+  B --> C[Pydantic\nValidation]
+  C --> D[Pandas\nDataFrame]
+  D --> E[ML Model\nmodel.joblib]
+  E -->|predict| F[Classe 0/1]
+  E -->|predict_proba| G[Probabilités]
+  F --> H[Réponse JSON]
+  G --> H
+  H --> A
 
